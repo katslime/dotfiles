@@ -1,6 +1,7 @@
-# Kat's Dotfiles
-Questionable NSFWness due to .wallpaper.png and screenshot. Obligatory Archey3 in screenshot.
-![screenshot](https://katsli.me/i/1546224210_2143_30.12.2018_1366x768.png)
+# My Dotfiles
+Somewhat NSFW due to the screenshot in the `README.md` and the `.wallpaper.png`.
+
+Screenshot at the bottom of the README.
 ## Prerequisites
 * i3-gaps
 * polybar
@@ -42,3 +43,5 @@ Questionable NSFWness due to .wallpaper.png and screenshot. Obligatory Archey3 i
 * [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) [+ IDCAC List](https://www.i-dont-care-about-cookies.eu/) [+ Nano-Defender List](https://jspenguin2017.github.io/uBlockProtector/#extra-installation-steps-for-ublock-origin)
 * [Undo Close Tab](https://addons.mozilla.org/en-US/firefox/addon/undoclosetabbutton/)
 * [User Agent Platform Spoofer](https://addons.mozilla.org/en-US/firefox/addon/user-agent-platform-spoofer/)
+## Screenshot
+![screenshot](https://katsli.me/i/1546292124_1635_31.12.2018_1366x768.png)
