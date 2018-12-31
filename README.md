@@ -1,4 +1,6 @@
 # Kat's Dotfiles
+Questionable NSFWness due to .wallpaper.png and screenshot. Obligatory Archey3 in screenshot.
+![screenshot](https://katsli.me/i/1546224210_2143_30.12.2018_1366x768.png)
 ## Prerequisites
 * i3-gaps
 * polybar
