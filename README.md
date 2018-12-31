@@ -45,3 +45,4 @@ Screenshot at the bottom of the README.
 * [User Agent Platform Spoofer](https://addons.mozilla.org/en-US/firefox/addon/user-agent-platform-spoofer/)
 ## Screenshot
 ![screenshot](https://katsli.me/i/1546292124_1635_31.12.2018_1366x768.png)
+![tmux](https://katsli.me/i/1546295284_1728_31.12.2018_1362x713.png)
