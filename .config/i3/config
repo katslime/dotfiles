@@ -140,8 +140,9 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-bindsym --release Print exec scrot '/home/kat/Pictures/Screenshots/%s_%H%M_%d.%m.%Y_$wx$h.png'
-bindsym --release Ctrl+Print exec scrot -s '/home/kat/Pictures/Screenshots/%s_%H%M_%d.%m.%Y_$wx$h.png'
+bindsym --release Print exec sh ~/.scripts/simple-bash-upload.sh full
+bindsym --release Ctrl+Print exec sh ~/.scripts/simple-bash-upload.sh selection
+bindsym --release Meta+Print exec sh ~/.scripts/simple-bash-upload.sh active
 
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -187,4 +188,6 @@ exec setxkbmap gb
 exec nm-applet
 exec nitrogen --restore
 exec compton
+exec /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec_always --no-startup-id /home/kat/.config/polybar/launch.sh
+

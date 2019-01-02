@@ -2,6 +2,8 @@
 Somewhat NSFW due to the screenshot in the `README.md` and the `.wallpaper.png`.
 
 Screenshots at the bottom of the README.
+
+Credit to [Keira](https://github.com/unendingPattern) for the bash uploader script.
 ## Prerequisites
 * i3-gaps
 * polybar
@@ -14,6 +16,10 @@ Screenshots at the bottom of the README.
 * NetworkManager
 * firefox
 * tmux
+* scrot
+* libnotify
+* xfce4-notifyd
+* xclip
 ## Notes
 `userChrome.css` requires manual installation from `./manual-install`. It goes into `.mozilla/firefox/*.default/chrome`.
 ## Things Used
