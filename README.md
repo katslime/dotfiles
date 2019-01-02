@@ -50,5 +50,7 @@ Credit to [Keira](https://github.com/unendingPattern) for the bash uploader scri
 * [Undo Close Tab](https://addons.mozilla.org/en-US/firefox/addon/undoclosetabbutton/)
 * [User Agent Platform Spoofer](https://addons.mozilla.org/en-US/firefox/addon/user-agent-platform-spoofer/)
 ## Screenshots
-![archey3](https://katsli.me/i/1546292124_1635_31.12.2018_1366x768.png)
+![archey3](https://katsli.me/i/P5ezAPW56oj6kGtCtNVouXyT3DSY52zS.png)
 ![tmux](https://katsli.me/i/1546295284_1728_31.12.2018_1362x713.png)
+![clean](https://katsli.me/i/dTgfdjfH6da7r3Clf9xwG2KNioIrb4ib.png)
+![firefox](https://katsli.me/i/W6hIMAepd4PbH0JJ4qMlcuXa0BeEyvd3.png)
