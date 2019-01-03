@@ -28,7 +28,7 @@ IMAGE_PATH="/home/$USER/Pictures/Screenshots/$RANDOM_FILENAME.png"
 REMOTE_USER="kat"
 REMOTE_SERVER="katsli.me"
 REMOTE_PORT="22"
-REMOTE_PATH="/var/www/katsli.me/i"
+REMOTE_PATH="/var/www/katsli.me/i/"
 REMOTE_URL="https://katsli.me/i/"
 
 if [ "$1" == "full" ]; then

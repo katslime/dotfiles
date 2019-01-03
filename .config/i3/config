@@ -1,24 +1,25 @@
 set $mod Mod4
 
 font pango:Monofur Nerd Font 10
-set $base00 #2b303b
-set $base01 #343d46
-set $base02 #4f5b66
-set $base03 #65737e
-set $base04 #a7adba
-set $base05 #c0c5ce
-set $base06 #dfe1e8
-set $base07 #eff1f5
-set $base08 #bf616a
-set $base09 #d08770
-set $base0A #ebcb8b
-set $base0B #a3be8c
-set $base0C #96b5b4
-set $base0D #8fa1b3
-set $base0E #b48ead
-set $base0F #ab7967
+set $base00 #212121
+set $base01 #303030
+set $base02 #353535
+set $base03 #4A4A4A
+set $base04 #B2CCD6
+set $base05 #EEFFFF
+set $base06 #EEFFFF
+set $base07 #FFFFFF
+set $base08 #F07178
+set $base09 #F78C6C
+set $base0A #FFCB6B
+set $base0B #C3E88D
+set $base0C #89DDFF
+set $base0D #82AAFF
+set $base0E #C792EA
+set $base0F #FF5370
+
 # Property Name         Border  BG      Text    Indicator Child Border
-client.focused          $base05 $base0D $base00 $base0D $base0D
+client.focused          $base09 $base08 $base00 $base08 $base08
 client.focused_inactive $base01 $base01 $base05 $base03 $base01
 client.unfocused        $base01 $base00 $base05 $base01 $base01
 client.urgent           $base08 $base08 $base00 $base08 $base08
@@ -27,7 +28,8 @@ client.background $base07
 
 # keybinds
 bindsym $mod+Return exec termite
-bindsym $mod+d exec rofi -theme arc-dark -combi-modi window#drun#ssh -show combi
+bindsym Mod1+Ctrl+Delete exec i3lock-fancy
+bindsym $mod+d exec rofi -theme base16-material-darker -combi-modi window#drun#ssh -show combi
 bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle"
 bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume 0 +5%"
 bindsym XF86AudioLowerVolume exec "pactl set-sink-volume 0 -5%"
@@ -142,7 +144,7 @@ bindsym $mod+r mode "resize"
 
 bindsym --release Print exec sh ~/.scripts/simple-bash-upload.sh full
 bindsym --release Ctrl+Print exec sh ~/.scripts/simple-bash-upload.sh selection
-bindsym --release Meta+Print exec sh ~/.scripts/simple-bash-upload.sh active
+bindsym --release Mod1+Print exec sh ~/.scripts/simple-bash-upload.sh active
 
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -189,5 +191,5 @@ exec nm-applet
 exec nitrogen --restore
 exec compton
 exec /usr/lib/xfce4/notifyd/xfce4-notifyd
+exec xautolock -time 5 -locker /usr/bin/i3lock-fancy -detectsleep
 exec_always --no-startup-id /home/kat/.config/polybar/launch.sh
-

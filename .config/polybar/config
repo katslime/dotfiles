@@ -16,33 +16,32 @@
 ;
 ;==========================================================
 
-
-;set $base00 #2b303b
-;set $base01 #343d46
-;set $base02 #4f5b66
-;set $base03 #65737e
-;set $base04 #a7adba
-;set $base05 #c0c5ce
-;set $base06 #dfe1e8
-;set $base07 #eff1f5
-;set $base08 #bf616a
-;set $base09 #d08770
-;set $base0A #ebcb8b
-;set $base0B #a3be8c
-;set $base0C #96b5b4
-;set $base0D #8fa1b3
-;set $base0E #b48ead
-;set $base0F #ab7967
+;set $base00 #212121
+;set $base01 #303030
+;set $base02 #353535
+;set $base03 #4A4A4A
+;set $base04 #B2CCD6
+;set $base05 #EEFFFF
+;set $base06 #EEFFFF
+;set $base07 #FFFFFF
+;set $base08 #F07178
+;set $base09 #F78C6C
+;set $base0A #FFCB6B
+;set $base0B #C3E88D
+;set $base0C #89DDFF
+;set $base0D #82AAFF
+;set $base0E #C792EA
+;set $base0F #FF5370
 
 [colors]
-background = #2b303b
-background-alt = #2b303b
-foreground = #c0c5ce
+background = #212121
+background-alt = #212121
+foreground = #EEFFFF
 ;foreground-alt = #676E7D
-foreground-alt = #65737e
-primary = #8fa1b3
-secondary = #d08770
-alert = #bf616a
+foreground-alt = #4A4A4A
+primary = #F07178
+secondary = #F78C6C
+alert = #C792EA
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -72,7 +71,7 @@ font-0 = Monofur Nerd Font:pixelsize=12;1
 font-1 = Noto Sans:fontformat=truetype:size=10;0
 
 modules-left = i3
-modules-center = date
+modules-center = date gpg-card
 modules-right = cpu temperature memory filesystem battery pulseaudio
 
 tray-position = right
@@ -119,10 +118,10 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#65737e}%{F-} %percentage_used%%
+label-mounted = %{F#4A4A4A}%{F-} %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
-label-mounted-underline = #b48ead
+label-mounted-underline = #C792EA
 label-unmounted-underline = ${colors.secondary}
 
 [module/bspwm]
@@ -225,7 +224,7 @@ type = internal/cpu
 interval = 2
 format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #8fa1b3
+format-underline = #82AAFF
 label = %percentage:2%%
 
 [module/memory]
@@ -233,7 +232,7 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #ebcb8b
+format-underline = #FFCB6B
 label = %percentage_used%%
 
 [module/wlan]
@@ -278,7 +277,7 @@ date = "%F "
 time = %H:%M:%S
 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #b48ead
+format-underline = #C792EA
 
 label = %date%%time%
 
@@ -294,11 +293,11 @@ ramp-volume-3 = 
 format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
-format-volume-underline = #c0c5ce
+format-volume-underline = #EEFFFF
 
 label-muted = 婢
-label-muted-foreground = #65737e
-label-muted-underline = #65737e
+label-muted-foreground = #4A4A4A
+label-muted-underline = #4A4A4A
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -306,7 +305,7 @@ bar-volume-foreground-1 = #55aa55
 bar-volume-foreground-2 = #55aa55
 bar-volume-foreground-3 = #55aa55
 bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #ebcb8b
+bar-volume-foreground-5 = #FFCB6B
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
 bar-volume-indicator = |
@@ -329,13 +328,13 @@ format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #a3be8c
-bar-volume-foreground-1 = #a3be8c
-bar-volume-foreground-2 = #a3be8c
-bar-volume-foreground-3 = #a3be8c
-bar-volume-foreground-4 = #a3be8c
-bar-volume-foreground-5 = #ebcb8b
-bar-volume-foreground-6 = #bf616a
+bar-volume-foreground-0 = #C3E88D
+bar-volume-foreground-1 = #C3E88D
+bar-volume-foreground-2 = #C3E88D
+bar-volume-foreground-3 = #C3E88D
+bar-volume-foreground-4 = #C3E88D
+bar-volume-foreground-5 = #FFCB6B
+bar-volume-foreground-6 = #F07178
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
@@ -352,11 +351,11 @@ adapter = AC
 full-at = 98
 
 format-charging = <ramp-capacity> <label-charging>
-format-charging-underline = #a3be8c
+format-charging-underline = #C3E88D
 label-charging = %percentage%% %time%
 
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline = #bf616a
+format-discharging-underline = #F07178
 label-discharging = %percentage%% %time%
 
 format-full-prefix = " "
@@ -386,14 +385,14 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #96b5b4
+format-underline = #89DDFF
 format-warn = <ramp> <label-warn>
-format-warn-underline = #bf616a
+format-warn-underline = #F07178
 
 label = %temperature-c%
 label-foreground = ${colors.foreground}
 label-warn = %temperature-c%
-label-warn-foreground = #bf616a
+label-warn-foreground = #F07178
 
 ramp-0 = 
 ramp-1 = 
@@ -428,6 +427,12 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/gpg-card]
+type = custom/script
+exec = sh ~/.scripts/gpg-status.sh
+interval = 15
+format-underline = #C792EA
 
 [settings]
 screenchange-reload = true
