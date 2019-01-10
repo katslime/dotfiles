@@ -4,6 +4,8 @@ Somewhat NSFW due to the screenshot in the `README.md` and the `.wallpaper.png`.
 Screenshots at the bottom of the README.
 
 Credit to [Keira](https://github.com/unendingPattern) for the bash uploader script.
+
+Designed for use with a YubiKey of some sort, due to the GPG card status element in the tray and the .zshrc being set up to allow for gpg-agent use on Arch Linux.
 ## Prerequisites
 * i3-gaps
 * polybar
@@ -20,12 +22,14 @@ Credit to [Keira](https://github.com/unendingPattern) for the bash uploader scri
 * libnotify
 * xfce4-notifyd
 * xclip
+* gpg
 ## Notes
 `userChrome.css` requires manual installation from `./manual-install`. It goes into `.mozilla/firefox/*.default/chrome`.
 ## Things Used
 * The Nerd Font patched version of Monofur as the main font
 * Arc-Dark for GTK
-* base16-ocean-dark for Termite
+* base16-material-darker for Termite
+* some artist for the wallpaper
 ## Firefox Tweaks
 ### about:config
 * extensions.pocket.enabled → false
